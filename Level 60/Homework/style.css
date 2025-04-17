@@ -1,0 +1,40 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px 200px 100px;
+    grid-template-rows: 100px 150px;
+    gap: 10px;
+    width: max-content;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .item1 {
+    background-color: teal;
+  }
+  
+  .item2 {
+    background-color: brown;
+  }
+  
+  .item3 {
+    background-color: olive;
+  }
+  
+  .item4 {
+    background-color: blue;
+  }
+  
+  .item5 {
+    background-color: orange;
+  }
+  
+  .item6 {
+    background-color: purple;
+  }
+  
