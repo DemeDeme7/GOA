@@ -1,0 +1,21 @@
+/* Flex არის CSS-ის მოდული, რომელიც საშუალებას გვაძლევს მარტივად და ეფექტურად დავალაგოთ ელემენტები კონტეინერში მოქნილად */
+/* Flex კონტეინერისთვის */
+.container {
+  display: flex; /* Flexbox-ის ჩართვა კონტეინერზე */
+  flex-direction: row; /* ელემენტების განლაგების მიმართულება: row (default), column, row-reverse, column-reverse */
+  flex-wrap: nowrap; /* ელემენტების გადატანის რეჟიმი: nowrap (default), wrap, wrap-reverse */
+  justify-content: flex-start; /* მთავარი ღერძის გასწორება: flex-start, flex-end, center, space-between, space-around, space-evenly */
+  align-items: stretch; /* გადაბმის ღერძის გასწორება: stretch (default), flex-start, flex-end, center, baseline */
+  align-content: stretch; /* მრავალი ხაზის გასწორება: stretch (default), flex-start, flex-end, center, space-between, space-around */
+}
+
+/* Flex ელემენტისთვის */
+.item {
+  flex-grow: 0; /* რამდენად გაიზარდოს ელემენტი თავისუფალ სივრცეში */
+  flex-shrink: 1; /* რამდენად შემცირდეს ელემენტი სივრცის ნაკლებობისას */
+  flex-basis: auto; /* საწყისი ზომა ელემენტისთვის */
+  flex: 0 1 auto; /* shorthand: grow shrink basis */
+  align-self: auto; /* კონკრეტული ელემენტის გასწორება: auto (default), flex-start, flex-end, center, baseline, stretch */
+  order: 0; /* ელემენტის თანმიმდევრობა */
+}
+/* Box Model არის CSS-ის ძირითადი კონცეფცია, რომელიც განსაზღვრავს, თუ როგორ ითვლება და განლაგდება ელემენტის ზომა და სივრცე გვერდზე. */
